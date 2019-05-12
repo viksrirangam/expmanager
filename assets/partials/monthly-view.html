@@ -1,0 +1,49 @@
+<div ng-controller="MonthSummaryCtrl">
+    <ul class="buttoninfo u-full-width">
+        <li>
+            <div class="navbutton large">
+                <a href="#/summary/{{prevmonth}}" data-icon="&#xe07a;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="navbutton">
+                <div>{{month}}</div>
+                <h6>(month summary)</h6>
+            </div>
+        </li>
+        <li>
+            <div class="navbutton large">
+                <a href="#/summary/{{nextmonth}}" data-icon="&#xe079;"></a>
+            </div>
+        </li>
+    </ul>
+    <canvas ng-pie id="chart">
+    </canvas>
+    <hr>
+    <ul class="buttoninfo">
+        <li>
+            <div class="navbutton">
+                <a href="#/expenseDetail">
+                    <span>Expenses: </span>
+                    <div class="fa-inr">{{totalexpenses}}</div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="navbutton">
+                <a href="#/incomeDetail">
+                    <span>Income: </span>
+                    <div class="fa-inr">{{totalincome}}</div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="navbutton">
+                <a>
+                    <span>Savings: </span>
+                    <div class="fa-inr">{{totalincome - totalexpenses}}</div>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>

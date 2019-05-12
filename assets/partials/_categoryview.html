@@ -1,0 +1,14 @@
+<table class="u-full-width">
+    <tr ng-repeat="item in categories">
+        <td style="text-align: right">
+            <div style="width: auto;display: inline-block">
+                <span>{{item.category}}</span>
+                </br>
+                <span class="fa-inr">{{item.amount}}</span>
+            </div>
+        </td>
+        <td>
+            <div style="height:10px;background-color:#1EAEDB;width:2px" ng-bar ng-model="item.amountratified"></div>
+        </td>
+    </tr>
+</table>

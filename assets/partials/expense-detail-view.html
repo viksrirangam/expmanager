@@ -1,0 +1,10 @@
+<div ng-controller="ExpenseReportCtrl">
+    <div>
+        <div>{{month}}</div>
+        <span>(expense summary)</span>
+        <div class="fa-inr">{{totalamount}}</div>
+    </div>
+    <hr>
+    <canvas ng-chart id="chart"></canvas>
+    <div ng-include="'./partials/_categoryview.html'"></div>
+</div>

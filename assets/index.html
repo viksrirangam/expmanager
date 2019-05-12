@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="mmApp">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/app.css">
+
+    <title>Money Manager</title>
+    <script src="./lib/jquery-2.0.2.js"></script>
+    <script src="./lib/angular.js"></script>
+    <script src="./lib/angular-route.js"></script>
+
+    <script src="./js/chart.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/services.js"></script>
+    <script src="./js/controllers.js"></script>
+    <script src="./js/directives.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <ul class="buttoninfo">
+                <li class="toolbar">
+                    <div class="navbutton" detect-active-tab="addexpense">
+                        <a href="#/">
+                            <span class="fa-add" data-icon="&#xe095;"> Expense</span>
+                            <!--<div>45200</div>-->
+                        </a>
+                    </div>
+                </li>
+                <li class="toolbar">
+                    <div class="navbutton" detect-active-tab="addincome">
+                        <a href="#/addIncome">
+                            <span class="fa-add" data-icon="&#xe095;"> Income</span>
+                            <!--<div>45200</div>-->
+                        </a>
+                    </div>
+                </li>
+                <li class="toolbar">
+                    <div class="navbutton" detect-active-tab="summary">
+                        <a href="#/summary">
+                            <span class="fa-summary" data-icon="&#xe05e;"> Summary</span>
+                            <!--<div>45200</div>-->
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="u-full-width">
+                <div class="view-panel" ng-view>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="view-panel" ng-sparkline city="San Francisco">
+        <h1>San Francisco Weather Report</h1>
+    </div>-->
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<label for="categories">Category</label>
+<select id="categories" ng-model="itm.category" required="" class="u-full-width">
+    <option value="">Choose category</option>
+    <option ng-repeat="name in categories" value="{{name}}">{{name}}</option>
+</select>
+</br>
+<label for="amount">Amount</label>
+<input type="number" ng-model="itm.amount" id="amount" required="" class="u-full-width" />
+</br>
+<label for="date">Date</label>
+<input type="date" ng-model="itm.date" id="date" required="" class="u-full-width" />
+</br>

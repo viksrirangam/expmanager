@@ -1,0 +1,7 @@
+<p>Adding an income will be handled here.</p>
+<div class="err u-full-width" data-icon="&#xe082;" ng-show="modelerr.length>0">{{modelerr}}</div>
+<form class="flat-form">
+    <div ng-include="'./partials/_form.html'"></div>
+    </br>
+    <input type="submit" class="button-primary" value="Save" ng-click="addIncome(itm)"/>
+</form>
